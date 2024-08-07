@@ -7,7 +7,7 @@ const textContent = [
 ];
 
 const imageUrls = [
-    "https://via.placeholder.com/300x200?text=Image+1",
+    "https://via.placeholder.com/350x350?text=Image+1",
     "https://via.placeholder.com/300x200?text=Image+2",
     "https://via.placeholder.com/300x200?text=Image+3",
     "https://via.placeholder.com/300x200?text=Image+4",
@@ -25,7 +25,7 @@ function showContent(buttonNumber, buttonElement) {
     // Wait for the hide animation to finish before updating content
     setTimeout(() => {
         textElement.innerText = textContent[buttonNumber - 1];
-        imageElement.innerHTML = `<img src="${imageUrls[buttonNumber - 1]}" alt="Image ${buttonNumber}">`;
+        imageElement.innerHTML = `<img class="" src="${imageUrls[buttonNumber - 1]}" alt="Image ${buttonNumber}">`;
         
         // Show new content with animation
         textElement.classList.add('show');
@@ -44,3 +44,19 @@ window.onload = function() {
     showContent(1, defaultButton);
     defaultButton.classList.add('active'); // Set default button as active
 }
+
+// =========================FAQ-section===========================
+const questions = document.querySelectorAll('.first-question1');
+		const answers = document.querySelectorAll('.first-question2');
+
+		questions.forEach((question, index) => {
+			question.addEventListener('click', function () {
+				const answer = answers[index];
+				if (answer.classList.contains('show')) {
+					answer.classList.remove('show');
+				} else {
+					answers.forEach(ans => ans.classList.remove('show'));
+					answer.classList.add('show');
+				}
+			});
+		});
