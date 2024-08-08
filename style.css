@@ -1,3 +1,5 @@
+
+
 * {
 
 	/* font-weight: 100; */
@@ -307,13 +309,15 @@ h2::after {
 }
 
 .planItem {
-	background-color: #fff;
-	border: 1px solid #e6e6e6;
-	border-radius: 1rem;
-	box-shadow: none;
-	/* padding: 2rem 1.5rem; */
-	display: flex;
-	flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1rem;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .planItem--pro {
@@ -338,6 +342,10 @@ h2::after {
 	font-size: 1rem;
 	font-weight: 400;
 	color: #656c7c;
+}
+.planItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* =================card============================ */
@@ -458,6 +466,73 @@ h1 {
 		
 	}
 }
+/* ======================zoom-effct-on-Industries we serve======= */
+/* Define base styles for hover-effect class */
+.hover-effect {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Zoom in */
+}
+
+.hover-effect:hover .bi-balloon-heart {
+    fill: red; /* Fill color on hover */
+}
+
+/* ====================btn-and-image-div======================== */
+.body-of-btn-img{
+	background: linear-gradient(to right, #000000, #ffffff);
+	color: #ffffff;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.btn-custom {
+	font-size: 0.875rem;
+	padding: 0.5rem 1rem;
+	border-radius: 30px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	position: relative;
+	overflow: hidden;
+	background-color: #343a40;
+	color: white;
+}
+.btn-custom::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-top: 40px solid #000000;
+	transition: border-top-color 0.3s ease;
+}
+.btn-custom:hover {
+	transform: scale(1.1); /* Zoom effect */
+}
+.btn-custom:hover::after {
+	border-top-color: #1b1918;
+}
+.highlight::after {
+	border-top-color: #1f1f1f !important;
+}
+.highlight {
+	background: linear-gradient(to right, #8f867e, #9a9090)!important;
+	color: #000 !important;
+}
+#text {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+#text.show {
+	opacity: 1;
+}
+
 /* ================FAQ-section==================== */
 .bg-custom {
 	background-image: url('./bg (31).jpg');
