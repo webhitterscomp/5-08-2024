@@ -245,8 +245,11 @@ h2::after {
 }
 
 /* ==========================buttn-div=================== */
-.btn-group .btn {
+.btn-lg-group .btn-5{
 	transition: all 0.3s ease;
+	/* background-color:#93abc2; */
+	background-color: rgb(78, 67, 67);
+	color: white;
 }
 
 .btn-group .btn.active,
@@ -288,10 +291,7 @@ h2::after {
 }
 
 /* =========================Price========================= */
-/* Adjustments for custom styles */
-.plans__container {
-	/* padding: 1rem 0 2rem; */
-}
+
 
 .plansHero {
 	/* padding: 5rem 0 4.5rem; */
@@ -359,7 +359,7 @@ h1 {
 }
 
 .lead {
-	color: #aaa;
+	color: #fffdfd;
 }
 
 .wrapper {
@@ -679,10 +679,11 @@ footer {
 	.list-unstyled {
 		li {
 			a {
-				color: rgba(255, 255, 255, .2);
+				color: rgba(255, 255, 255, 0.391);
 
 				&:hover {
 					color: white;
+					text-decoration: none;
 				}
 			}
 		}

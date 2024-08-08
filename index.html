@@ -159,12 +159,13 @@
                 <div class="container d-md-flex bg-dark align-content-center justify-content-center"
                     style="border-radius: 15px;">
                     <div class="d-block text-center w-sm-50   m-3 pt-2">
-                        <img src="./logo.avif" alt="Logo" style="max-height: 100%; width: 100%; " >
+                        <img src="./logo.avif" alt="Logo" style="max-height: 100%; width: 100%; ">
                     </div>
                     <div>
                         <p class="text-white m-3 alin" style="text-align: justify;">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Deleniti dolorum repellat officiis omnis earum eius deserunt
-                            tenetur id sint velit fugiat hic natus quibusdam lor Lorem ipsum dolor sit amet consectetur adipisici </p>
+                            tenetur id sint velit fugiat hic natus quibusdam lor Lorem ipsum dolor sit amet consectetur
+                            adipisici </p>
                     </div>
 
                 </div>
@@ -175,21 +176,35 @@
                         <!-- First Div -->
                         <div class="col-md-4  ">
                             <div class="info-div d-flex align-content-center justify-content-center flex-column ">
-                                <h4 class="text-light m-2" style="text-align: center;">10+</h4>
+                                <div class="d-flex align-content-center justify-content-center">
+                                    <h4 class="text-light mt-2 number-updater" style="text-align: center;"
+                                        data-target-01="10">10 </h4>
+                                    <p class="m-0 p-0" style="color: white; font-size: 26px;">+</p>
+                                </div>
+
+
                                 <p class="text-light" style="text-align: center;">Years of Experience</p>
                             </div>
                         </div>
                         <!-- Second Div -->
                         <div class="col-md-4 ">
                             <div class="info-div">
-                                <h4 class="text-light m-2" style="text-align: center;">2000+</h4>
+                                <div class="d-flex align-content-center justify-content-center">
+                                    <h4 class="text-light mt-2 number-updater" style="text-align: center;"
+                                        data-target-02="2000">2000</h4>
+                                    <p class="m-0 p-0" style="color: white; font-size: 26px;">+</p>
+                                </div>
                                 <p class="text-light m-2" style="text-align: center;">Case Studies</p>
                             </div>
                         </div>
                         <!-- Third Div -->
                         <div class="col-md-4  ">
                             <div class="info-div ">
-                                <h4 class="text-light m-2" style="text-align: center;">10+</h4>
+                                <div class="d-flex align-content-center justify-content-center">
+                                    <h4 class="text-light mt-2 number-updater" style="text-align: center;"
+                                        data-target-03="10">10+</h4>
+                                    <p class="m-0 p-0" style="color: white; font-size: 26px;">+</p>
+                                </div>
                                 <p class="text-light m-2" style="text-align: center;">Keywords Ranked</p>
                             </div>
                         </div>
@@ -222,7 +237,7 @@
                             <textarea class="form-control" id="more-info" rows="3"
                                 placeholder="Enter additional information"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-custom">Submit</button>
+                        <button type="submit" class="btn btn-light">Submit</button>
                     </form>
                 </div>
             </div>
@@ -602,7 +617,8 @@
     </div>
     <div class="container  d-flex align-content-center justify-content-center flex-column  mt-5 ">
         <div class="text-center">
-            <h1 class=" text-center text-dark" style="margin: 20px 20px;">We're Awarded as <span style="color: #881111;"> Best SEO Company for Ranking,</span> Leads & Sales</h1>
+            <h1 class=" text-center text-dark" style="margin: 20px 20px;">We're Awarded as <span
+                    style="color: #881111;"> Best SEO Company for Ranking,</span> Leads & Sales</h1>
         </div>
         <div class="d-lg-flex align-content-center justify-content-center" style="gap:20px">
             <div class="container d-flex align-content-between flex-column"
@@ -876,16 +892,21 @@
 
     </div>
     <div>
-        <div class="container mt-4">
+        <div class="container mt-">
             <!-- Button Group -->
             <div class="row">
                 <div class=" container col-md-12 col-sm-8  btn-lg-group d-md-flex justify-content-between align-content-center flex-md-row flex-sm-column mt-sm-3   "
                     style="gap: 20px; border-radius: 15px;" role="group" aria-label="Button group">
-                    <button type="button" class="btn btn-dark" id="btn1" onclick="showContent(1,this)">Button 1</button>
-                    <button type="button" class="btn btn-dark" id="btn2" onclick="showContent(2,this)">Button 2</button>
-                    <button type="button" class="btn btn-dark" id="btn3" onclick="showContent(3,this)">Button 3</button>
-                    <button type="button" class="btn btn-dark pt-0 pt-md-0 pt-sm-5" id="btn4" onclick="showContent(4,this)">Button 4</button>
-                    <button type="button" class="btn btn-dark" id="btn5" onclick="showContent(5,this)">Button 5</button>
+                    <button type="button" class="btn btn-dark  btn-5" id="btn1" onclick="showContent(1,this)">Button
+                        1</button>
+                    <button type="button" class="btn btn-dark btn-5" id="btn2" onclick="showContent(2,this)">Button
+                        2</button>
+                    <button type="button" class="btn btn-dark btn-5" id="btn3" onclick="showContent(3,this)">Button
+                        3</button>
+                    <button type="button" class="btn btn-dark pt-0 pt-md-0 pt-sm-5 btn-5" id="btn4"
+                        onclick="showContent(4,this)">Button 4</button>
+                    <button type="button" class="btn btn-dark btn-5" id="btn5" onclick="showContent(5,this)">Button
+                        5</button>
                 </div>
             </div>
 
@@ -921,7 +942,12 @@
                         <div class="planItem planItem--free text-center">
                             <div class="card1">
                                 <div class="card-header ">
-                                    <div class="card-icon symbol symbol--rounded"><svg style="height: 50px; width:50px; margin:10px 10px"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M256 64l128 0 0 64-128 0 0-64zM240 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l48 0 0 32L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 256 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-256 0 0-32 48 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48L240 0zM96 448l0-64 128 0 0 64L96 448zm320-64l128 0 0 64-128 0 0-64z"/></svg></div>
+                                    <div class="card-icon symbol symbol--rounded"><svg
+                                            style="height: 50px; width:50px; margin:10px 10px"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path
+                                                d="M256 64l128 0 0 64-128 0 0-64zM240 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l48 0 0 32L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 256 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-256 0 0-32 48 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48L240 0zM96 448l0-64 128 0 0 64L96 448zm320-64l128 0 0 64-128 0 0-64z" />
+                                        </svg></div>
                                     <h2 class="local-seo">Local SEO</h2>
                                 </div>
                                 <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -947,7 +973,12 @@
                         <div class="planItem planItem-free text-center">
                             <div class="card1">
                                 <div class="card-header">
-                                    <div class="card-icon symbol symbol--rounded"><svg style="height: 50px; width:50px; margin:10px 10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg></div>
+                                    <div class="card-icon symbol symbol--rounded"><svg
+                                            style="height: 50px; width:50px; margin:10px 10px"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z" />
+                                        </svg></div>
                                     <h2>Worldwide SEO</h2>
                                 </div>
                                 <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -974,15 +1005,18 @@
                             <div class="card1">
                                 <div class="card-header">
                                     <div class="card-icon symbol symbol--rounded">
-                                        <svg style="height: 50px; width:50px; margin:10px 10px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
-                                          </svg>
+                                        <svg style="height: 50px; width:50px; margin:10px 10px"
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                                        </svg>
                                     </div>
                                     <h2>E-Commerce SEO</h2>
                                 </div>
                                 <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 </div>
-                            </div>  
+                            </div>
 
                             <div class="price">$0<span>/ month</span></div>
 
@@ -1000,49 +1034,53 @@
                 </div>
             </div>
         </section>
-<div class="body-of-btn-img">
-  
-        <div class="container mt-5 mb-5 ">
-            <div class="container d-flex flex-column" style="border-radius: 15px; background: linear-gradient(to right,#908181, #000000 );">
-                <h1 class="text-light text-center" style="text-align: justify; margin: 10px 10px;">Our Process</h1>
-                <p style="text-align: justify; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, earum architecto sed molestias alias minus eum delectus optio repudiandae sapiente! Qui blanditiis sapiente fugit, adipisci ipsa pariatur modi. Est, quis.</p>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-6 d-flex flex-column">
-                    <button id="btn1" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn1</button>
-                    <button id="btn2" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn2</button>
-                    <button id="btn3" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn3</button>
-                    <button id="btn4" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn4</button>
-                    <button id="btn5" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn5</button>
-                    <button id="btn6" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn6</button>
-                    <button id="btn7" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn7</button>
-                    <button id="btn8" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn8</button>
-                    <button id="btn9" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn9</button>
+        <div class="body-of-btn-img">
+
+            <div class="container mt-5 mb-5 ">
+                <div class="container d-flex flex-column"
+                    style="border-radius: 15px;/* background: linear-gradient(to right,#908181, #000000 );*/ background: #343a40;">
+                    <h1 class="text-light text-center" style="text-align: justify; margin: 10px 10px;">Our Process</h1>
+                    <p style="text-align: justify; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                        earum architecto sed molestias alias minus eum delectus optio repudiandae sapiente! Qui
+                        blanditiis sapiente fugit, adipisci ipsa pariatur modi. Est, quis.</p>
                 </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <p id="text" class="m-auto p-4 bg-dark text-white"
-                       style="text-align: justify; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 15px;">
-                        Text for button 1
-                    </p>
+                <div class="row mt-5">
+                    <div class="col-md-6 d-flex flex-column">
+                        <button id="btn1" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn1</button>
+                        <button id="btn2" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn2</button>
+                        <button id="btn3" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn3</button>
+                        <button id="btn4" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn4</button>
+                        <button id="btn5" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn5</button>
+                        <button id="btn6" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn6</button>
+                        <button id="btn7" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn7</button>
+                        <button id="btn8" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn8</button>
+                        <button id="btn9" class="btn btn-custom text-left btn-block mb-2 btn-of-8th-btn">btn9</button>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p id="text" class="m-auto p-4 bg-dark text-white"
+                            style="text-align: justify; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 15px;">
+                            Text for button 1
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
+
         <div class="body1 ">
             <section class="wrapper">
                 <div class="container">
                     <div class="row-cols-1">
                         <div class="col text-center mb-5">
-                            <h1 class="display-4  text-sm-center">Case Studies</h1>
+                            <h1 class="display-4 font-weight-bold  text-sm-center">Case Studies</h1>
                             <p class="lead">Lorem ipsum dolor sit amet at enim hac integer volutpat maecenas pulvinar.
                             </p>
                         </div>
                     </div>
-                    <div class="row" >
-                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4" style="" >
-                            <div class="card text-dark card-has-bg click-col" style="background-color: #343a40;height: 400px; ">
-                               
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card text-dark card-has-bg click-col"
+                                style="background-color: #343a40;height: 400px; ">
+
                                 <div class="card-img-overlay d-flex flex-column">
                                     <div class="card-body d-flex flex-column">
                                         <small class="card-meta mb-2">Thought Leadership</small>
@@ -1070,9 +1108,10 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                            <div class="card text-dark card-has-bg click-col" style="background-color: #343a40; height: 450px;">
-                               
-                                
+                            <div class="card text-dark card-has-bg click-col"
+                                style="background-color: #343a40; height: 450px;">
+
+
                                 <div class="card-img-overlay d-flex flex-column">
                                     <div class="card-body d-flex flex-column">
                                         <small class="card-meta mb-2">Thought Leadership</small>
@@ -1100,9 +1139,10 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                            <div class="card text-dark card-has-bg click-col" style="background-color: #343a40; height: 450px;">
-                               
-                                
+                            <div class="card text-dark card-has-bg click-col"
+                                style="background-color: #343a40; height: 450px;">
+
+
                                 <div class="card-img-overlay d-flex flex-column">
                                     <div class="card-body d-flex flex-column">
                                         <small class="card-meta mb-2">Thought Leadership</small>
@@ -1140,68 +1180,89 @@
 
         </div>
         <div class="container mt-5">
-            <h1 class="text-center bg-dark text-light p-md-4 p-sm-5" style="border-radius: 15px;">Industries we serve</h1>
+            <h1 class="text-center bg-dark text-light p-md-4 p-sm-5" style="border-radius: 15px;">Industries we serve
+            </h1>
             <div class="d-md-flex text-center align-content-center justify-content-center" style="gap: 100px;">
                 <div class="">
-                    <div class= "hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                    <div class="hover-effect d-flex align-content-center justify-content-center m-2">
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                 </div>
                 <div class="">
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
                     <div class="hover-effect d-flex align-content-center justify-content-center m-2">
-                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        <svg class="bi bi-balloon-heart" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
                         </svg>
                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisici</p>
                     </div>
@@ -1209,7 +1270,7 @@
                 <!-- Repeat above div for other items -->
             </div>
         </div>
-        
+
 
         <div class="container my-4">
             <div class="bg-dark  shadow-sm border mb-3" style="border-radius: 15px;">
