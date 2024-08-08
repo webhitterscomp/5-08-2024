@@ -1,6 +1,4 @@
-
-
-* {
+*{
 
 	/* font-weight: 100; */
 	/* font-style: normal; */
@@ -210,13 +208,27 @@ h2::after {
 }
 
 /* ==============four div=================== */
-/* Ensure a smooth transition effect */
+
 /* ==================all hover-class================== */
+.hover-effect {
+    transition: transform 0.3s ease, color 0.3s ease;
+	/* border: 2px solid black; */
+    /* cursor: pointer; */
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Zoom in */
+}
+
+.hover-effect:hover .bi-balloon-heart {
+    fill: red; /* Fill color on hover */
+}
 #text-div:hover {
 	/* background-color: #343a40 !important;	 */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background-color: #f3f3f3;
 	transition: all .3s linear;
+	transform: scale(1.1);
 }
 #read-more-btn:hover{
 	background-color: #fff;
@@ -248,16 +260,19 @@ h2::after {
 .btn-lg-group .btn-5{
 	transition: all 0.3s ease;
 	/* background-color:#93abc2; */
-	background-color: rgb(78, 67, 67);
+	background-color: rgb(121, 104, 104);
 	color: white;
+	border: none;
 }
 
 .btn-group .btn.active,
 .btn-group .btn:hover {
-	background-color: #0056b3;
+	/* background-color: #0056b3; */
 	/* Darker blue */
-	border-color: #004494;
+	/* border-color: #004494; */
 	/* Even darker blue */
+	/* border: none; */
+	outline: none;
 	color: #fff;
 	transform: scale(1.05);
 	/* Slightly enlarge the button */
@@ -285,10 +300,7 @@ h2::after {
 	transform: translateX(0);
 }
 
-.content-image img {
-	max-width: 100%;
-	height: auto;
-}
+
 
 /* =========================Price========================= */
 
@@ -333,6 +345,7 @@ h2::after {
 .price {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	font-weight: 600;
 	font-size: 2rem;
 	margin: 2rem 0;
@@ -467,19 +480,7 @@ h1 {
 	}
 }
 /* ======================zoom-effct-on-Industries we serve======= */
-/* Define base styles for hover-effect class */
-.hover-effect {
-    transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-}
 
-.hover-effect:hover {
-    transform: scale(1.1); /* Zoom in */
-}
-
-.hover-effect:hover .bi-balloon-heart {
-    fill: red; /* Fill color on hover */
-}
 
 /* ====================btn-and-image-div======================== */
 .body-of-btn-img{
@@ -504,6 +505,8 @@ h1 {
 .btn-custom::after {
 	content: '';
 	position: absolute;
+	/* border: none !important;
+	outline: none !important; */
 	top: 0;
 	right: 0;
 	width: 0;
@@ -718,4 +721,25 @@ footer {
 	.local-seo{
 		height: 58px !important;
 	}
+	.content-image img {
+		max-width: 	90%;
+		height: auto;
+		width: auto; 
+		height: 100%;
+		width: 100%;
+	}
 }
+
+
+
+
+/* 
+@media (max-width: 600px) {
+  #btn5{
+	text-align: center !important;
+	margin-top: 10px;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+  }
+} */

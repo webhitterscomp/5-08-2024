@@ -126,11 +126,11 @@ const textContent = [
 ];
 
 const imageUrls = [
-    "https://via.placeholder.com/350x350?text=Image+1",
-    "https://via.placeholder.com/350x350?text=Image+2",
-    "https://via.placeholder.com/350x350?text=Image+3",
-    "https://via.placeholder.com/350x350?text=Image+4",
-    "https://via.placeholder.com/350x350?text=Image+5"
+    "https://via.placeholder.com/300x210?text=Image+1",
+    "https://via.placeholder.com/300x210?text=Image+2",
+    "https://via.placeholder.com/300x210?text=Image+3",
+    "https://via.placeholder.com/300x210?text=Image+4",
+    "https://via.placeholder.com/300x210?text=Image+5",
 ];
 
 function showContent(buttonNumber, buttonElement) {
@@ -144,7 +144,7 @@ function showContent(buttonNumber, buttonElement) {
     // Wait for the hide animation to finish before updating content
     setTimeout(() => {
         textElement.innerText = textContent[buttonNumber - 1];
-        imageElement.innerHTML = `<img class="" src="${imageUrls[buttonNumber - 1]}" alt="Image ${buttonNumber}">`;
+        imageElement.innerHTML = `<img style: "height: 100% ; width:100%;" class="d-block" src="${imageUrls[buttonNumber - 1]}" alt="Image ${buttonNumber}">`;
 
         // Show new content with animation
         textElement.classList.add('show');
